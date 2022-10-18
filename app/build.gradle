@@ -1,0 +1,42 @@
+plugins {
+    id "com.android.application"
+    id "org.jetbrains.kotlin.android"
+    id "com.google.devtools.ksp" version "1.7.0-1.0.6"
+}
+
+android {
+    namespace "com.uragiristereo.reversepixelify"
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.uragiristereo.reversepixelify"
+        minSdk 29
+        targetSdk 33
+        versionName "1.0"
+        versionCode 1
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = "11"
+    }
+}
+
+dependencies {
+    implementation "androidx.core:core-ktx:1.9.0"
+
+    compileOnly "de.robv.android.xposed:api:82"
+
+    def yuki_version = "1.1.4"
+    implementation "com.highcapable.yukihookapi:api:$yuki_version"
+    ksp "com.highcapable.yukihookapi:ksp-xposed:$yuki_version"
+}

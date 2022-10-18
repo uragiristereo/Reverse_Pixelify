@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="xposed_scope">
+        <item>com.google.android.apps.photos</item>
+        <item>com.google.android.apps.turbo</item>
+        <item>com.google.android.apps.turboadapter</item>
+        <item>com.google.android.dialer</item>
+        <item>com.google.android.googlequicksearchbox</item>
+        <item>com.google.android.tts</item>
+        <item>com.google.audio.hearing.visualization.accessibility.scribe</item>
+        <item>com.android.chrome</item>
+        <item>com.android.vending</item>
+        <item>com.breel.wallpapers20</item>
+        <item>com.google.android.as</item>
+        <item>com.google.android.as.oss</item>
+        <item>com.google.android.gms</item>
+    </string-array>
+</resources>
